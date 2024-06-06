@@ -25,8 +25,8 @@ const Quotes = () => {
         return (
             <div className="App">
                 <h1>Random Advice by <a href="https://www.linkedin.com/in/ian-tos-/" target='_blank'>Ian Kimani</a></h1>
-                <button onClick={handleGiveAdvice}>Give me advice!</button>
-                {advice && <p>{advice}</p>}
+                <button onClick={handleGiveAdvice} disabled={loading}>Give me advice!</button>
+                {advice && <h1>{advice}</h1>}
                 <h1>{loading && <ScaleLoader color="#36d7b7" size={80} />}</h1>
                 
                 
