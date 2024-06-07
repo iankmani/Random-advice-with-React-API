@@ -14,6 +14,9 @@ const Quotes = () => {
             setLoading(true)
             const data = await response.json();
             setAdvice(data.slip.advice);
+            // or you can do//
+            // const Advice = (data.slip.advice)
+            // setAdvice(Advice)
             setLoading(false)
             }
             catch(error){
