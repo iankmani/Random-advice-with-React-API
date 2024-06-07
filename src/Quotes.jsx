@@ -1,5 +1,5 @@
 import {ScaleLoader} from 'react-spinners'
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import './App.css';
 const Quotes = () => {
     const [advice, setAdvice] = useState(null)
